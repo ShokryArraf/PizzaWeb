@@ -1,0 +1,160 @@
+html {
+  scroll-padding-top: 110px; /* header height + flag strip */
+}
+
+body {
+  background: #fff8f0;
+  color: #2c2c2c;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 90px; /* pushes content below header + flag */
+}
+
+
+header {
+  background: #fc4040;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px 14px 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav a {
+  color: #f8f9fa;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ffd60a;
+  text-decoration:underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url("public/pizza.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.hero .cta {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero .cta:hover {
+  background: #00b300;
+}
+
+.hero .ctc {
+  font-size: 1.5em;
+}
+
+.header2 {
+  text-align: center;
+  color: #d62828;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.pizza-card {
+  background: #fdf0d5;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.pizza-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #d62828;
+  margin: 8px 0;
+}
+
+button {
+  padding: 8px 16px;
+  background: #ffd60a;
+  color: #2c2c2c;
+  border: none;
+  border-radius: 6em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+footer {
+  background: #2c2c2c;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-links {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: #ffd60a;
+  font-size: 1.4em;
+}
+
+.flag-strip {
+  display: flex;
+  height: 8px;
+  position: fixed;
+  top: 99.03px; 
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+
+.flag-strip div {
+  flex: 1;
+}
+
+.flag-green { background: #008000; }
+.flag-white { background: #ffffff; }
+.flag-red { background: #d62828; }
